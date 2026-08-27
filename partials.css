@@ -1,0 +1,147 @@
+.page-hero{
+    background:linear-gradient(135deg,#0b0d0f,#25180f);
+    color:#fff;
+    padding:85px 0 70px;
+    border-bottom:1px solid var(--line)
+}
+.page-hero h1{
+    font-family:Cinzel,serif;
+    font-size:clamp(2.8rem,6vw,5.5rem);
+    line-height:1;
+    margin:12px 0
+}
+.page-hero p{
+    max-width:760px;
+    color:#c4c7ca;
+    font-size:1.05rem
+}
+.site-nav{
+    background:#090a0b;
+    color:#fff
+}
+.site-nav .nav{
+    border-bottom:1px solid rgba(255,255,255,.08)
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px
+}
+.card{
+    background:#fff;
+    border:1px solid #ddd6ca;
+    padding:28px;
+    border-radius:5px
+}
+.card.dark{
+    background:#17191c;
+    color:#fff;
+    border-color:var(--line)
+}
+.card h3{
+    font-family:Cinzel,serif;
+    margin:8px 0
+}
+.card p{
+    color:#666
+}
+.card.dark p{
+    color:#aeb2b6
+}
+.num{
+    color:var(--accent);
+    font-weight:700;
+    letter-spacing:.12em
+}
+.prompt-list{
+    display:grid;
+    gap:18px
+}
+.prompt-card{
+    background:#17191c;
+    color:#fff;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:24px
+}
+.prompt-head{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    align-items:center
+}
+.prompt-head h3{
+    font-family:Cinzel,serif
+}
+.copy-btn{
+    background:transparent;
+    border:1px solid #666;
+    color:#fff;
+    padding:7px 12px;
+    border-radius:999px;
+    cursor:pointer
+}
+.prompt-card code{
+    display:block;
+    white-space:pre-wrap;
+    background:#0b0c0e;
+    border-left:3px solid var(--accent);
+    padding:18px;
+    margin-top:16px;
+    color:#ddd;
+    font-family:Consolas,monospace;
+    font-size:.86rem;
+    line-height:1.6
+}
+.prompt-card .used{
+    font-size:.8rem;
+    color:var(--accent2);
+    margin-top:10px
+}
+.scene-detail{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:22px;
+    padding:26px 0;
+    border-bottom:1px solid #d7d0c5
+}
+.scene-number{
+    font-family:Cinzel,serif;
+    color:var(--accent);
+    font-size:2rem
+}
+.scene-detail h3{
+    font-family:Cinzel,serif
+}
+.scene-detail p{
+    color:#555
+}
+.tag{
+    display:inline-block;
+    border:1px solid #cfc6b8;
+    border-radius:999px;
+    padding:4px 10px;
+    font-size:.72rem;
+    margin:8px 4px 0 0;
+    color:#666
+}
+.video-note{
+    margin-top:20px;
+    padding:18px;
+    border-left:3px solid var(--accent);
+    background:#eae3d7;
+    color:#555
+}
+@media(max-width:850px){
+    .cards{
+        grid-template-columns:1fr 1fr
+    }
+}
+@media(max-width:560px){
+    .cards{
+        grid-template-columns:1fr
+    }
+    .scene-detail{
+        grid-template-columns:1fr
+    }
+}
